@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+      <ul>
+          <li *ngFor="let user of users">{{ user.name }}</li>
+        </ul>
+    Welcome to {{title}}!
+    <div style="text-align:center">
+              <div class="row">
+          <div class="col-6">
+          <div class="col-md-8 well">
+            <form class="form-horizontal">
+              <div class="form-group">
+                  <input type="text" class="col-sm-9 form-control" placeholder="First Name" />
+                      <div class="form-group">
+                <input type="text" class="col-sm-9 form-control" placeholder="E-mail" />
+          </div>
+          <svg height="500" width="500">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" (click)="switchColor(1)"
+            [ngClass]= "wasChoosen(1)===true?'bdef':'choosen'" />
+            <circle cx="150" cy="50" r="40" stroke="black" stroke-width="3" fill="red" (click)="switchColor(2)"
+            [ngClass]= "wasChoosen(2)===true?'bdef':'choosen'" />
+            <circle cx="250" cy="50" r="40" stroke="black" stroke-width="3" fill="red" (click)="switchColor(3)"
+            [ngClass]= "wasChoosen(3)===true?'bdef':'choosen'" />
+            <circle cx="350" cy="50" r="40" stroke="black" stroke-width="3" fill="red" (click)="switchColor(4)"
+            [ngClass]= "wasChoosen(4)===true?'bdef':'choosen'" />
+            <circle cx="450" cy="50" r="40" stroke="black" stroke-width="3" fill="red" (click)="switchColor(5)"
+            [ngClass]= "wasChoosen(5)===true?'bdef':'choosen'" />        </svg>
+
+
+          <div class="text-right">
+          <a href="" class="btn btn-primary">Submit</a>
+          </div>
+
+
